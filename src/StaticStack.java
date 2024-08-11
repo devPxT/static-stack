@@ -12,7 +12,6 @@ public class StaticStack<T> {
         }
         top++;
         this.data[top] = data;
-        System.out.println(this.data[top]);
     }
 
     public T pop() {
