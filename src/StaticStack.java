@@ -12,6 +12,7 @@ public class StaticStack<T> {
         }
         top++;
         this.data[top] = data;
+        System.out.println(this.data[top]);
     }
 
     public T pop() {
@@ -25,7 +26,10 @@ public class StaticStack<T> {
     }
 
     public void clear() {
-        
+        for (int i = 0; i <= top; i++) {
+            this.data[i] = null;
+        }
+        top = -1;
     }
 
     public boolean isFull() {
